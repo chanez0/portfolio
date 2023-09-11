@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/835e5d424d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="LOGO1.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Computer science student</p>
+                <h1>Hi, I'm <span>Chanez</span><br>from Algeria.</h1>
+            </div>
+        </div>
+     </div>
+
+     <!-------about-------->
+
+
+        <div id="about">
+            <div class="container">
+               <div class="row">
+                 <div class="about-col-1">
+                    <img src="">
+                 </div>
+                    <div class="about-col-2">
+                     <h1 class="sub-title">About Me</h1>
+                     <p>I'm currently a computer science student at the university 
+                     of science and technology houari boumediene, I am going to start my
+                     second year this upcoming september.</p>
+
+                        <div class="tab-titles">
+                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                         <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                         <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Fast Learner</span><br>I'm open to receive feedback</li>
+                                <li><span>I speak 3 languages</span><br>I have no problem working in a team</li>
+                                <li><span>Web development</span><br>coming soon</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Club Member</span><br>I'm an active club member of scientific club Micro Club at USTHB since december 2022</li>
+                                <li><span>Projects</span><br>coming soon</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2022 - Current</span><br>Computer science student at USTHB.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-----------services---------->
+
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web development (coming soon)</h2>
+                    <p>Description here.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>UI/UX design (coming soon)</h2>
+                    <p>Description here.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     
+<!------------portfolio------------>
+       <div id="portfolio">
+          <div class="container">
+             <h1 class="sub-title">My Portfolio</h1>
+             <div class="work-list">
+                 <div class="work">
+                     <p>coming soon</p>
+                 </div>
+             </div>
+          </div>
+       </div>
+
+<!--------------contact---------->
+        <div id="Contact">
+            <div class="container"> 
+                <div class="contactme">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> chanezbelfadel@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +213551225951</p>
+                </div> 
+                <div class="social-icons">
+                 <a href="https://www.instagram.com/ch_a.nez"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="https://www.facebook.com/chacendre"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                 <a href="https://www.linkedin.com/in/chanez-belfadel-42b75524b"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+
+            }
+
+         </script>
+    </body>
+
+</html>
